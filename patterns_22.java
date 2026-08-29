@@ -91,7 +91,7 @@ public class patterns_22 {
 
     //    for(int i=0;i<3;i++){
     //         for(int j=0;j<4;j++){
-    //             System.err.print("*");
+    //             System.out.print("*");
                 
     //         }
     //         System.out.println();
@@ -130,10 +130,10 @@ public class patterns_22 {
     
     */
     // for(int i=1;i<=5;i++){
-    //     for(int j=1;j<5-i+1;j++){
+    //     for(int j=1;j<5-i+1;j++){    //5-2+1=3+1=4....j<4=3 times
     //         System.out.print(" ");
     //     }
-    //     for(int k=1;k<=i;k++){
+    //     for(int k=1;k<=i;k++){   //k<=2
     //         System.out.print("*");
     //     }
     //     System.out.println();
@@ -157,6 +157,10 @@ public class patterns_22 {
 //         }
 //         System.out.println();
 //    }
+    
 
+    //leetcode =2 questions try today in next video 
+    //set up your linkedin profile using gpt at least and remove emojis from the  text given by the gpt i
+    //will be making a video on this too! 
     }
 }
