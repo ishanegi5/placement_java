@@ -35,7 +35,7 @@ public class array_25 {
         int start=0;
         int end=arr.length-1;
         while(start<=end){
-            int mid=(start+end)/2;
+            int mid=start+(end-start)/2;
             if(arr[mid]==key){
                 return mid;
             }
@@ -500,7 +500,7 @@ public class array_25 {
         //by default 0 is stored in an array
         int marks[]=new int[5];
         // int ages[]={2,5,7,3};
-        // String fruits[]={"mango","apple","orange"};
+        // String []fruits={"mango","apple","orange"};
         // System.out.println(fruits[0]);
         // fruits[0]="mosumi";
         // System.out.println(fruits[0]);
@@ -508,18 +508,21 @@ public class array_25 {
 
         Scanner sc=new Scanner(System.in);
  
-        // int manduu[]=new int[3];
-        // manduu[0]=sc.nextInt();
-        // manduu[1]=sc.nextInt();
-        // manduu[2]=sc.nextInt();
-        // System.out.print(manduu[0]+" ");
-        // System.out.print(manduu[1]+" ");
-        // System.out.print(manduu[2]+" ");
+        // int arr[]=new int[3];
+        // arr[0]=sc.nextInt();
+        // arr[1]=sc.nextInt();
+        // arr[2]=sc.nextInt();
+        // System.out.print(arr[0]+" ");
+        // System.out.print(arr[1]+" ");
+        // System.out.print(arr[2]+" ");
 
 
-        marks[0]=97;
-        marks[1]=98;
-        marks[2]=96;
+        // marks[0]=97;
+        // marks[1]=98;
+        // marks[2]=96;
+        // for(int i=0;i<marks.length;i++){
+        //     System.out.print(marks[i]+" ");
+        // }
         // System.out.println("maths: "+marks[0]);
         // System.out.println("physics: "+marks[1]);
         // System.out.println("chemistry: "+marks[2]);
@@ -527,6 +530,7 @@ public class array_25 {
         // System.out.println("length of marks: "+marks.length); //dot ek operator h isse class object k sath future m padhenge
 
         //pass by reference is there in array
+        // System.out.println();
         // update(marks);
         // for(int i=0;i<marks.length;i++){
         //     System.out.print(marks[i]+" ");
@@ -553,7 +557,8 @@ public class array_25 {
 
         //binary search-> array must be sorted -one note pr i will explain
         //isko one note pr samjhati hu draw krke i will pause the video
-        // System.out.println("key is present at index: "+binary_search(arr,9));
+        int arr[]={2,5,7,9,15};
+        System.out.println("key is present at index: "+binary_search(arr,9));
 
 
 
@@ -678,8 +683,8 @@ public class array_25 {
 
 
         //triplets sum=0
-        int arr[]={-1, 0,  1, 2, -1, -4};
-        triplets_sum_zero(arr);
+        // int arr[]={-1, 0,  1, 2, -1, -4};
+        // triplets_sum_zero(arr);
 
         //iterations kitni hongi loops ki isme:
         //6-2=4-> 0<4 ->0,1,2,3

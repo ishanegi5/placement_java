@@ -196,6 +196,8 @@ public class patterns_24 {
 
 
         /*
+
+        
           *      *
           **    **
           ***  ***
@@ -208,7 +210,7 @@ public class patterns_24 {
         
         
         */
-       butterfly_pattern(8,8);
+    //    butterfly_pattern(8,8);
 
     /*
     
@@ -246,7 +248,7 @@ public class patterns_24 {
 
 */
 
-        // diamond(4,4);
+        diamond(4,4);
 
 
     }
