@@ -67,27 +67,25 @@ public class array_25 {
 
 
     public static void pair(int arr[]){
-        for(int i=0;i<arr.length;i++){
+        int count=0;
+        for(int i=0;i<=arr.length-2;i++){
             for(int j=i+1;j<arr.length;j++){
                 System.out.print("("+arr[i]+","+arr[j]+")");
+                count++;
             }
             System.out.println();
         }
-        System.out.println("total pairs: "+(arr.length*(arr.length-1))/2);
+        System.out.println("Total pair: "+count);
+        // System.out.println("total pairs: "+(arr.length*(arr.length-1))/2); //4*3=12/2=6
     }
 
 
     public static void subarrays(int arr[]){
         int total_subarrays=0;
         for(int i=0;i<arr.length;i++){
-            int start=i;
-            System.out.println(arr[i]);
-            total_subarrays++;
-            for(int j=i+1;j<arr.length;j++){
-                int end=j;
-                for(int k=start;k<=end;k++){
+            for(int j=i;j<arr.length;j++){
+                for(int k=i;k<=j;k++){
                     System.out.print(arr[k]+" ");
-
                 }
                 total_subarrays++;
                 System.out.println();
@@ -557,12 +555,13 @@ public class array_25 {
 
         //binary search-> array must be sorted -one note pr i will explain
         //isko one note pr samjhati hu draw krke i will pause the video
-        int arr[]={2,5,7,9,15};
-        System.out.println("key is present at index: "+binary_search(arr,9));
+        // int arr[]={2,5,7,9,15};
+        // System.out.println("key is present at index: "+binary_search(arr,9));
 
 
 
         //reversing an array -one note pr i will explain
+        // int arr[]={5,2,6,12,78};
         // reverse(arr);
         // for(int i=0;i<arr.length;i++){
         //     System.out.print(arr[i]+" ");
@@ -582,7 +581,8 @@ public class array_25 {
 
 
         //sum of each sub array-> 
-        // sum_of_subarray(arr);
+        int arr[]={1,-1,6,-1,3};
+        sum_of_subarray(arr);
 
 
         //min and max in sub array
